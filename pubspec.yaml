@@ -20,7 +20,7 @@ publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 version: 1.0.0+1
 
 environment:
-  sdk: '>=2.18.5 <3.0.0'
+  sdk: '>=2.15.1 <3.0.0'
 
 # Dependencies specify other packages that your package needs in order to work.
 # To automatically upgrade your package dependencies to the latest versions
@@ -31,15 +31,37 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  tmdb_api:
 
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
+  _discoveryapis_commons: ^1.0.5
+  http: ^0.13.4
+  googleapis: ^10.1.0
+  google_sign_in: ^6.0.2
+  extension_google_sign_in_as_googleapis_auth: ^2.0.9
+  google_books_api: ^1.0.1
+  provider: ^6.0.2
+  auto_route: ^3.2.1
+  url_launcher: ^6.0.18
+  flutter_widget_from_html: ^0.8.4
+  google_fonts: ^4.0.3
 
+  flutter_web_plugins:
+    sdk: flutter
 dev_dependencies:
   flutter_test:
     sdk: flutter
+  auto_route_generator: ^3.2.1
+  flutter_launcher_icons: ^0.9.0
+  build_runner:
+
+flutter_icons:
+  image_path: "assets/images/ic_app_icon.jpeg"
+  android: true
+  ios: true
 
   # The "flutter_lints" package below contains a set of recommended lints to
   # encourage good coding practices. The lint set provided by the package is
@@ -63,6 +85,7 @@ flutter:
   assets:
      - images/bg.jpg
      - images/alan.png
+     - images/EZ.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware

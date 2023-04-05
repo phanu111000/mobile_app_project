@@ -15,27 +15,24 @@ class ReadingPage extends StatelessWidget {
                 width: double.infinity,
                 decoration: const BoxDecoration(
                   image: DecorationImage(
-                      image:
-                      AssetImage("images/bg.jpg"),
-                      fit: BoxFit.cover
-                  ),
-                ),
+                    image: NetworkImage('https://media.discordapp.net/attachments/1054322057405534228/1079129876608585849/162560-simple-background-black-background-minimalism-theater-photography-chair-stairs-dark.png?width=994&height=663'), fit: BoxFit.cover
+                      // image: AssetImage("images/alan.jpg"), fit: BoxFit.cover),
+                )),
                 child: Column(
                   children: [
                     IconButton(
                         padding: EdgeInsets.only(top: 40, right: 310),
                         iconSize: 35,
-                        icon: Icon(Icons.arrow_back_ios_new, color: Colors.black),
+                        icon:
+                            Icon(Icons.arrow_back_ios_new, color: Colors.white54),
                         onPressed: () {
                           Navigator.of(context).pop();
-                        }
-                    ),
+                        }),
                     SizedBox(height: 350),
-                    Text('Reading Category!', style: TextStyle(fontSize: 40, fontWeight: FontWeight.w700))
+                    Text('Page in progress!',
+                        style: TextStyle(
+                            fontSize: 40, fontWeight: FontWeight.w700, color: Colors.white))
                   ],
-                )
-            )
-        )
-    );
+                ))));
   }
 }
